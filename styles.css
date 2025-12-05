@@ -1,0 +1,258 @@
+ *{
+    margin:0;
+    padding:0;
+list-style-type:none;
+text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7EFED;
+    color: #000000;
+    line-height: 1.6;
+     font-family: "Montserrat", sans-serif;
+}
+.container{
+    padding:0 100px;
+}
+/*Header Section Styles */
+.header {display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    gap: 40px;
+    padding-top: 57px;
+}
+.menu{
+    display: flex;
+    gap: 58px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+.menu a{
+    color:#000000;}
+
+.menu a:hover{
+    color: #23675A;
+    transition: 0.3s;
+}
+.search-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #000000;
+}
+.menu-search{
+    border: none;
+    background-color: #000000;
+     color: #FFFFFF ;    
+padding-top: 10px;
+outline: none;
+height: 46px;
+width: 100%;
+min-width: 84px;
+flex-grow: 1;
+}
+.menu-search:focus::placeholder{
+ transition: .15s;
+    color: transparent;
+}
+
+.menu-search::placeholder{
+    color: #FFFFFF;
+  font-size: 24px;
+}
+.search-icon, .cart-icon{
+    fill: #FFFFFF;
+}
+.pseudo::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 46px;
+  background-color: #fff;
+  position: relative;
+  left: -11px;
+}
+.cart{
+    position: relative;
+}
+.cart-counter{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #FFD154;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+/* Main Section Styles */
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.add-to-cart{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 52px;
+}
+.button-conteiner{
+    display: flex;
+    position: relative;
+}
+.add-to-cart-button
+{    background-color: #000000;
+     color: #FFFFFF;
+      padding: 26px 24px 26px 93px;
+     border: none;
+    border-radius: 38px;
+    font-size: 16px;
+     text-transform: uppercase;
+    flex-grow: 1;
+  cursor: pointer;
+ height: 76px;
+white-space: nowrap;
+}
+.add-to-cart-icon{
+    background-color: #FFD154;
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+   position: absolute;
+   top: 7px;
+   left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+   
+
+.counter{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.counter-circle{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+    text-align: center ;
+}
+.ingridient-img{
+   background-color: #23675A;
+    border-radius: 50%;
+   width: 80px;
+    height: 80px;
+    padding: 10px;
+    object-fit: contain;
+}
+.ingridient-flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.corn{
+    background-color: #D51037;
+}
+.spices{
+    padding: 16px;
+    background-color: #FDB339;
+}
+/* Footer Styles */
+.more-snakes{
+    background-color: #23675A;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 35px 83px 35px 160px;
+    border-radius: 20px;
+    position: relative;
+}
+.more-snakes::after{
+    content: "";
+    display: block;
+    clear: both;
+      background-image: url("./images/foterbBG.png" );
+      opacity: 0.15;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.snake-item{
+    max-width: 217px;
+    background-color: white;
+    padding: 17px 30px 16px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+.snake-title{
+    text-transform: uppercase;
+  white-space: nowrap;
+    font-size: 18px;
+    font-weight: 700;
+}
+.snake-item img{
+    position: absolute;
+  top: -10px;
+    left: -40%;
+    max-width: 120%;
+height: 120%;
+}
+.star-icon{
+    fill:#FDB339
+}
+.snake-price{
+    position: absolute;
+    bottom: 40px;
+    right: 15px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+}
+.snake-price::before{
+    content: "₹";
+    margin-right: 2px;
+    font-weight: 700;
+}
+.snake-button{
+    background-color: #FFD154;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 18px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
